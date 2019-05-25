@@ -8,7 +8,6 @@ then
 else
     echo "Virtual env não encontrado. Deseja criá-lo? [S|n]"
     read RESP
-    echo "RESP: $RESP"
 
     if [ $RESP -eq "n" ]
     then
@@ -17,7 +16,7 @@ else
         echo "Atualizando os repositorios"
         sudo apt-get update || sudo pacman -Sy
         echo "Instalando o pip"
-        sudo apt install python3-pip || sudo pacman -S python-pip
+        sudo apt install python3-pip || sudo apt install python-pip || sudo pacman -S python-pip
         echo "Atualizando o pip"
         python3 -m pip install --upgrade pip
         echo "Instalando o virtual env"
@@ -28,7 +27,7 @@ else
         source "$DIR_RELATIVO/env/bin/activate" || . "$DIR_RELATIVO/env/bin/activate"
         echo "Instalando o Lark"
         pip install lark-parser
-        clear
+        echo "\n\n\n"
     fi
 fi
 
