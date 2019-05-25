@@ -78,3 +78,7 @@ Para executar o programa existe duas formas:
         ou 
         $ python ./mel.py
         ```
+    **OBS:** Para desativar o virtual env:
+    ```bash
+    $ deactivate
+    ```
