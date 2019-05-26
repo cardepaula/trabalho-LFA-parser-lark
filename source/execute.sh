@@ -20,7 +20,7 @@ else
         sudo apt install python3-pip python3-venv || sudo pacman -S python-pip
 
         echo "_________Instalando o virtual env_________"
-        if sudo pip install virtualenv
+        if sudo pip3 install virtualenv
 		then
 			echo "_________Criando o virtual env_________"
 			python3 -m venv "$DIR_RELATIVO/env"
