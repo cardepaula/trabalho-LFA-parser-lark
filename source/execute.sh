@@ -3,7 +3,6 @@ DIR_RELATIVO="${0%/*}"
 
 if [ -e "$DIR_RELATIVO/env" ]
 then
-
     source "$DIR_RELATIVO/env/bin/activate" || . "$DIR_RELATIVO/env/bin/activate"
 else
     echo "Virtual env não encontrado. Deseja criá-lo? [S|n]"

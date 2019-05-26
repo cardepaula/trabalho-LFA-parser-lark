@@ -2,20 +2,21 @@
 # Trabalho 1 LFA 2019/1 
 
 **Autor:**  
->Marcos Antonio Carneiro de Paula
+Marcos Antonio Carneiro de Paula
 
 **Linguagem:** 
->- Python 3
+- Python 3
 
 **Ambiente de programação:** 
->- VS Code 
->- Lark
->- Manjaro Linux 18.0.4 *Illyria*
+- VS Code 
+- Lark
+- Manjaro Linux 18.0.4 *Illyria*
 
-**Descrição geral dos arquivos aqui contidos**
+**Descrição geral dos arquivos aqui contidos:**
 
 *source/mel.py*
->Código fonte da implementação do *Parser Descendente Recursivo* com o Lark
+
+Código fonte da implementação do *Parser Descendente Recursivo* com a ferramenta [Lark](https://github.com/lark-parser/lark)
 
 **Executando** 
 
@@ -27,7 +28,7 @@ Para executar o programa existe duas formas:
     $ sudo chmod +x ./source/execute.sh
     ```
     - O script verifica se existe [virtual env](https://pythonacademy.com.br/blog/python-e-virtualenv-como-programar-em-ambientes-virtuais), se não existir ele tenta criar um, e executa o *mel.py*;
-- **Executar manualmente**
+- **Executar manualmente:**
     - Se existir não virtual env (diretório *source/env* ) execute os comandos (de preferencia no diretório *source/* ):
     
         - Atualizando os repositorios do sistema
@@ -43,9 +44,9 @@ Para executar o programa existe duas formas:
         ou
         $ sudo pacman -S python-pip (arch linux based)
         ```
-        - Verificando o pip está atualizado:
+        - Talvez seja necessário instalar tbm o pacote *python3-venv* :
         ```bash
-        $ python3 -m pip install --upgrade pip
+        $ sudo apt install python3-venv
         ```
         - Instalando o virtual env:
         ```bash
@@ -64,6 +65,7 @@ Para executar o programa existe duas formas:
         - Instalando o Lark
         ```bash
         pip install lark-parser
+        ```
 
     - Se já exitir virtual env (diretório *source/env* ), dentro do doretório *source*, execute o seguinte comando:
         - Ativando o virtual env:
